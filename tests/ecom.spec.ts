@@ -7,7 +7,7 @@ test('Home tab should be visible', async ({ page }) => {
   await expect(home).toBeVisible();
 });
 
-test('list of product should be displayed', async ({ page }) => {
+test('List of product category should be visible', async ({ page }) => {
   await page.goto('https://ueirorganic.com/');
   const home =  page.getByText('Home');
   await expect(home).toBeVisible();
@@ -52,7 +52,7 @@ test('Gulkand Honey 250g product should be visible', async ({ page }) => {
 
 });
 
-test('On click of add to cart summery page should be visible', async ({ page }) => {
+test('On click of add to cart summery page should  get open', async ({ page }) => {
   await page.goto('https://ueirorganic.com/');
   const home =  page.getByText('Home');
   await expect(home).toBeVisible();
@@ -76,7 +76,7 @@ test('On click of add to cart summery page should be visible', async ({ page }) 
 
 });
 
-test('On click of view cart, card details should be displayed', async ({ page }) => {
+test('On click of check out, pop up frame should be open', async ({ page }) => {
   await page.goto('https://ueirorganic.com/');
   const home =  page.getByText('Home');
   await expect(home).toBeVisible();
